@@ -4,40 +4,47 @@
     <title>Fake Meeting</title>
     <meta name="author" content="Ryan Goh">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>Fake Meeting to practice HTML</header>
     <h1>Very Important Meeting</h1>
-    <p><span style="color:green"> 04/16/23</span></p>
-    <hr>
+    <p><span style="color:rgba(138, 231, 138, 0.76)"> 04/16/23</span></p>
+    <div class="container">
     <p>Attendees:</p>
         <ul>
             <li>Ryan Goh</li>
             <li>No one else</li>
         </ul> 
-    <section>
+    </div>
     <h2>Discussion Topics</h2>
-    <p>Todo</p>
+    <div class="box">
+        <p>Todo</p>
         <ol>
             <li><strong>Figure out what to discuss</strong></li>
             <li><b>Discuss said thing</b></li>
         </ol>
+    </div>
     <hr>
-    <p>From last time</p>
+    <div class="long"><p>From last time</p></div>
         <ol>
             <li><i>Everything</i></li>
             <li><em>Nothing</em></li>
         </ol>
     </section>
     <section>
-    <h3>Content of Meeting</h3>
-    <p>There was nothing accomplished, <br> so <br>let's <br> fill <br> space </p>
+        <div class="short">
+            <h3>Content of Meeting</h3>
+            <p>There was nothing accomplished, <br> so <br>let's <br> fill <br> space </p>
+        </div>
     </section>
     <hr>
-    <nav>
-        <a href="https://en.wikipedia.org/wiki/Nothing">Useful link</a>
-        <a href="https://en.wikipedia.org/wiki/Waste">Another link</a>
-    </nav>
+    <div class="auto">
+        <nav>
+            <a href="https://en.wikipedia.org/wiki/Nothing">Useful link</a>
+            <a href="https://en.wikipedia.org/wiki/Waste">Another link</a>
+        </nav>
+    </div>
     <details>
         <summary>What we do</summary>
         <p>...</p>
@@ -46,14 +53,21 @@
         <source src="audio.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
-    <video width="320" height="240" controls>
+    <video class = 'media' width="320" height="240" controls>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
     <img src="thumbs_up.png" alt="Thumbs up">
     <footer>Accomplished a lot at this meeting</footer>  
-
+    <p class="grid-container">New grid</p>
+    <p class="grid-item">grid item</p>
+    <p class="grid-item">2nd grid item</p>
+    <p class="flex-container">flex</p>
+    <p class="flex-item">flex 1</p>
+    <p class="flex-item">flex 2</p>
+    <p class="warning">Extra warning.</p>
+    <p class="*">universal heading</p>
   <form>
     <fieldset>
         <input type="checkbox" id="check">
