@@ -1,0 +1,211 @@
+/* General CSS Topics */
+
+/* Comment */
+
+/* Color */
+body {
+    color: #e21686;
+  }
+  
+  h1 {
+    color: orange;
+  }
+  
+  h2{
+    color:hsl(30, 50%, 20%);
+    width: vmax;
+    margin: lvh;
+    padding: 1rem;
+  }
+  /* Background */
+  body {
+    background-color: #616661b9;
+  }
+  
+  /* Unit */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .box {
+    width: 50%;
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Box Model */
+  .long {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 20mm;
+    padding-right: 20mm;
+    
+    border-style: solid;
+    border-color: #333;
+    border-width: 2px;
+    border-radius: 5px;
+  }
+  
+  .short {
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .auto {
+    margin: auto;
+  }
+  
+  /* Text */
+  h1,h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  a {
+    text-decoration: green wavy underline;
+  }
+  
+  /* Display */
+  .item {
+    display: block;
+  }
+  
+  .item-inline {
+    display: inline-block;
+  }
+  
+  /* Sizing */
+  img {
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+    min-width: 50px;
+  }
+  
+  /* Position */
+  .top {
+    position: static;
+  }
+  
+  .left {
+    position: relative;
+    left: 50px;
+  }
+  
+  .right {
+    position: fixed;
+    right: 50px;
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Pseudo-class */
+  a:hover {
+    color: red;
+  }
+  
+  button:active {
+    background-color: green;
+  }
+  
+  /* Layouts - Flexbox */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  
+  /* Layouts - Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .grid-item {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    
+    .box {
+      width: 100%;
+    }
+    
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1 {
+    font-weight: bold;
+  }
+  
+  /* Attribute Selector */
+a[href="https://www.example.com"] {
+    color: red;
+  }
+  
+  /* Descendant Combinator */
+  ul li {
+    list-style: square;
+  }
+  
+  /* Child Combinator */
+  nav > ul {
+    background-color: #f1f1f1;
+  }
+  
+  /* General sibling combinator */
+  h2 ~ p {
+    font-style: italic;
+  }
+  
+  /* Adjacent sibling combinator */
+  h1 + p {
+    font-weight: bold;
+  }
+  
+  /* Combining Two Selectors */
+  p.warning {
+    color: red;
+  }
+  
+  
